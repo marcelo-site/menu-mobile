@@ -1,0 +1,99 @@
+#menu-mobile {
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+}
+a:visited {
+    fill: rgb(0, 255, 55);
+    background-color: brown;
+    border-radius: 100%;
+}
+nav {
+    display: inline;
+    position: fixed;
+    bottom: 0%;
+    width: auto;
+}
+div#escondido  {
+    flex-direction: column;
+    width:140%;
+    position: absolute;
+    visibility: hidden;
+    bottom:60px;
+}
+#escondido input:checked ~ a{
+    visibility: visible;
+    background-color: rgb(240, 240, 245);
+    width: 200px;
+    padding: 10px;
+}
+#escondido input:checked ~label{
+    padding: 10px;
+    width: 200px;
+    background-color: blue;
+    visibility: visible;
+    justify-content: flex-end;
+}
+input {
+    display: none;
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.inline a, .inline label{
+    text-align: center;
+    vertical-align: middle;
+}
+#menu .inline{
+    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.671);
+    border-left: none;
+    background-color: rgb(255, 255, 255);
+    width: 101vw;
+    margin-left: -2%;
+    align-content: center;
+    align-items: center;
+}
+svg{
+    flex-direction: column;
+    padding: 1px 1px;
+}
+p{
+    margin: 0px;
+    font-size: 0.7em;
+}
+label {
+    margin: 0px;
+    font-size: 0.8em;
+}
+.q{
+   flex-direction: column;
+}
+@media screen and (min-width:400px) and (max-width:599px) {
+    svg{
+        height: 50px;
+        width: 50px;
+    }
+    p, label{
+    margin: 0px;
+    font-size: 1em;
+}
+}
+ @media screen and (min-width:600px) and (max-width:700px){
+    svg{
+        height: 60px;
+        width: 60px;
+    }
+    p, label{
+    margin: 0px;
+    font-size: 1.2em;
+}
+}
+@media screen and (min-width:701px){
+   div.inline {
+        display: none;
+    }
+}

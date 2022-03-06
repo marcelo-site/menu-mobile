@@ -5,122 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        a{
-            text-decoration: none;
-        }
-        a:visited {
-            fill: rgb(0, 255, 55);
-            background-color: brown;
-            border-radius: 100%;
-        }
-        a#com:hover {
-            text-decoration: underline;
-        }
-        #com {
-            width: 100vw;
-        }
-        nav {
-            display: inline;
-            position: fixed;
-            bottom: 0%;
-            width: auto;
-        }
-        div#d0  {
-            flex-direction: column;
-            width:140%;
-            position: absolute;
-            visibility: hidden;
-            bottom:60px;
-        }
-        
-        #d0 input:checked ~ a{
-            visibility: visible;
-            background-color: rgb(240, 240, 245);
-            width: 200px;
-            padding: 10px;
-            /* justify-content: right;
-            align-content:space-between ; */
-            /* float: right; */
-        }
-        #d0 input:checked ~label{
-            padding: 10px;
-            width: 200px;
-            background-color: blue;
-            visibility: visible;
-            justify-content: flex-end;
-        }
-        input {
-            display: none;
-        }
-        div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-        }
-        .inline a, .inline label{
-            text-align: center;
-            vertical-align: middle;
-        }
-        #menu .inline{
-            box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.671);
-            border-left: none;
-            background-color: rgb(255, 255, 255);
-            width: 101vw;
-            margin-left: -2%;
-            align-content: center;
-            align-items: center;
-        }
-        svg{
-            flex-direction: column;
-            padding: 1px 1px;
-        }
-        p{
-            margin: 0px;
-            font-size: 0.7em;
-        }
-        label {
-            margin: 0px;
-            font-size: 0.8em;
-        }
-        .q{
-           flex-direction: column;
-        }
-        @media screen and (min-width:400px) and (max-width:599px) {
-            svg{
-                height: 50px;
-                width: 50px;
-            }
-            p, label{
-            margin: 0px;
-            font-size: 1em;
-        }
-        /* #menu .inline{
-            margin: 0px;
-        } */
-    }
-         @media screen and (min-width:600px) and (max-width:700px){
-            svg{
-                height: 60px;
-                width: 60px;
-            }
-            p, label{
-            margin: 0px;
-            font-size: 1.2em;
-        }
-    }
-        @media screen and (min-width:701px){
-           div.inline {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="com">
+    <div id="menu-mobile">
         <nav>
-            <div id="d0" style="float: left;">
+            <div id="escondido" style="float: left;">
                 <input id="d1" type="checkbox" name="d1">
                 <label for="d1">Fechar✖️</label>
                 <a href="#">m1</a>
@@ -167,53 +57,5 @@
                 </div>
         </nav>
     </div>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 20px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 20px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 20px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 20px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 20px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 20px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 20px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 20px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 10px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 150px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 150px;">abx</a>
-    </section>
-    <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, explicabo! Exercitationem illo dolore ratione blanditiis quas, doloremque ad voluptas saepe quis tempore amet iusto iste, cupiditate ex. Quis, voluptas quo?</p>
-        <a href="" style="margin-left: 150px;">abx</a>
-    </section>
 </body>
 </html>
