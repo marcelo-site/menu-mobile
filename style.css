@@ -1,26 +1,30 @@
 #menu-mobile {
     width: 100vw;
 }
-a{
+a.ancor{
     text-decoration: none;
 }
-a:visited {
-    fill: rgb(0, 255, 55);
-    background-color: brown;
-    border-radius: 100%;
-}
-nav {
+nav#navegacao {
     display: inline;
     position: fixed;
     bottom: 0%;
     width: auto;
 }
-div#escondido  {
+div.inferior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+div.inferior div{
+    margin: auto;
+}
+div#escondido {
     flex-direction: column;
-    width:140%;
+    width:80%;
     position: absolute;
     visibility: hidden;
-    bottom:60px;
+    bottom:70px;
 }
 #escondido input:checked ~ a{
     visibility: visible;
@@ -35,20 +39,23 @@ div#escondido  {
     visibility: visible;
     justify-content: flex-end;
 }
-input {
+input.nao-ver {
     display: none;
 }
-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+div.geral{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
-.inline a, .inline label{
+/*.horizontal{
+    flex-direction: row;
+}*/
+.inferior a, .inferior label{
     text-align: center;
     vertical-align: middle;
 }
-#menu .inline{
+#menu-visivel .inferior{
     box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.671);
     border-left: none;
     background-color: rgb(255, 255, 255);
@@ -57,43 +64,50 @@ div{
     align-content: center;
     align-items: center;
 }
-svg{
-    flex-direction: column;
+.inferior svg{
+    flex-direction: row;
     padding: 1px 1px;
 }
-p{
+.tagp{
     margin: 0px;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 label {
     margin: 0px;
-    font-size: 0.8em;
+    font-size: 1em;
 }
-.q{
-   flex-direction: column;
+#escondido1{
+	display:none;
 }
+/*comportamento de acordo com a largura da tela*/
 @media screen and (min-width:400px) and (max-width:599px) {
-    svg{
+    .inferior svg{
         height: 50px;
         width: 50px;
     }
     p, label{
     margin: 0px;
-    font-size: 1em;
+    font-size: 1.3em;
+    }
+    div#escondido  {
+        bottom: 80px;
+    }
 }
-}
- @media screen and (min-width:600px) and (max-width:700px){
-    svg{
+@media screen and (min-width:600px) and (max-width:700px){
+    .inferior svg{
         height: 60px;
         width: 60px;
     }
     p, label{
     margin: 0px;
-    font-size: 1.2em;
-}
+    font-size: 1.5em;
+    }
+    div#escondido  {
+        bottom: 90px;
+    }
 }
 @media screen and (min-width:701px){
-   div.inline {
+   div#menu-mobile {
         display: none;
     }
 }
