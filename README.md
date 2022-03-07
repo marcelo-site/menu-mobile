@@ -1,5 +1,5 @@
 # Menu mobile
- ## menu mobile wordpress só com Htmlç5 e CSS3
+ ## menu mobile wordpress só com Html5 e CSS3
 
  Para começar oe entendimento de como foi construido e funciona esser código vamos para os links:
 
