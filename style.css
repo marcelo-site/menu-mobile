@@ -70,11 +70,11 @@ div.geral{
 }
 .tagp{
     margin: 0px;
-    font-size: 0.8em;
-}
-label {
-    margin: 0px;
     font-size: 1em;
+}
+.label1 {
+    margin: 0px;
+    font-size: 0.9em;
 }
 #fantasma{
 	display:none;
@@ -85,9 +85,14 @@ label {
         height: 50px;
         width: 50px;
     }
-    p, label{
-    margin: 0px;
+    .label1{
+    font-size: 1.1em;
+    }
+    .tagp{
     font-size: 1.3em;
+    }
+    
+        
     }
     div#escondido  {
         bottom: 80px;
@@ -98,8 +103,10 @@ label {
         height: 60px;
         width: 60px;
     }
-    p, label{
-    margin: 0px;
+    .label1{
+    font-size: 1.3em;
+    }
+    .tagp{
     font-size: 1.5em;
     }
     div#escondido  {
