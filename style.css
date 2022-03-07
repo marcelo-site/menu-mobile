@@ -4,6 +4,10 @@
 }
 a.ancor{
     text-decoration: none;
+    color: black;
+}
+.icon-svg{
+    margin: 0% 20%;
 }
 nav#navegacao {
     display: inline;
@@ -79,7 +83,6 @@ div.geral{
 /*comportamento de acordo com a largura da tela*/
 @media screen and (min-width:400px) and (max-width:599px) {
     #menu-mobile {
-        width: 102vw;
         margin-left:-3vw;
     }
     .inferior svg{
@@ -99,7 +102,6 @@ div.geral{
    
 @media screen and (min-width:600px) and (max-width:700px){
     #menu-mobile {
-        width: 102vw;
         margin-left:-2vw;
     }
     .inferior svg{
