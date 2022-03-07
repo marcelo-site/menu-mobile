@@ -1,5 +1,6 @@
 #menu-mobile {
-    width: 100vw;
+    width: 101vw;
+    margin-left:-3vw;
 }
 a.ancor{
     text-decoration: none;
@@ -57,7 +58,6 @@ div.geral{
     border-left: none;
     background-color: rgb(255, 255, 255);
     width: 101vw;
-    margin-left: -2%;
     align-content: center;
     align-items: center;
 }
@@ -78,6 +78,10 @@ div.geral{
 }
 /*comportamento de acordo com a largura da tela*/
 @media screen and (min-width:400px) and (max-width:599px) {
+    #menu-mobile {
+        width: 102vw;
+        margin-left:-3vw;
+    }
     .inferior svg{
         height: 50px;
         width: 50px;
@@ -94,6 +98,10 @@ div.geral{
 }
    
 @media screen and (min-width:600px) and (max-width:700px){
+    #menu-mobile {
+        width: 102vw;
+        margin-left:-2vw;
+    }
     .inferior svg{
         height: 60px;
         width: 60px;
@@ -108,6 +116,7 @@ div.geral{
         bottom: 90px;
     }
 }
+/*deixa de exibir nessa largura*/
 @media screen and (min-width:701px){
    div#menu-mobile {
         display: none;
