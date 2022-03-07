@@ -48,9 +48,6 @@ div.geral{
   justify-content: center;
   margin: auto;
 }
-/*.horizontal{
-    flex-direction: row;
-}*/
 .inferior a, .inferior label{
     text-align: center;
     vertical-align: middle;
@@ -91,13 +88,11 @@ div.geral{
     .tagp{
     font-size: 1.3em;
     }
-    
-        
-    }
     div#escondido  {
         bottom: 80px;
     }
 }
+   
 @media screen and (min-width:600px) and (max-width:700px){
     .inferior svg{
         height: 60px;
